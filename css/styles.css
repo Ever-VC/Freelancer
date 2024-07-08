@@ -5,34 +5,80 @@
     --primario: #FFC107;
     --secundario: #0097A7;
     --gris: #757575;
+    --gris-claro: #DFE9F3;
 }
-
+/* Globales */
 /* Lo siguiente (html, body) permite trabajar de la siguiente manera -> 1rem = 10px */
-
 html {
     font-size: 62.5%;
+    box-sizing: border-box; /* Box Model */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
     font-size: 16px; /* 1rem = 10px */
     font-family: "Krub", sans-serif;
+    background-image: linear-gradient(to top, var(--gris-claro) 0%, var(--blanco) 100%);
 }
 
-/* Estilos generales */
-.titulo {
-    text-align: center;
+.shadow {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Tipografía */
+h1 {
     font-size: 3.8rem;
 }
 
-.titulo span {
-    font-size: 2rem;
+h2 {
+    font-size: 2.8rem;
 }
 
-.contenedor {
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.container {
     max-width: 120rem; /* 120rem = 1200px */
     margin: 0 auto; /*margen 0 verticalmente y automático horizontalmente (se centra)  */
 }
 
+.btn {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        width: auto;
+    }
+}
+
+/* Títulos */
+.titulo span {
+    font-size: 2rem;
+}
+
+/* Navegación Principal */
 .nav-bg {
     background-color: var(--secundario);
 }
@@ -62,4 +108,30 @@ body {
 .navegacion-principal a:hover {
     background-color: var(--primario);
     color: var(--oscuro);
+}
+
+/* Hero */
+.hero {
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb( 0 0 0 / 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h2, .hero-content p {
+    color: var(--blanco);
 }
