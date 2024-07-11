@@ -28,7 +28,7 @@
         <div class="hero-content">
             <h2 >Diseño y Desarrollo Web <span>Freelancer</span></h2>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="88"  height="88"  viewBox="0 0 24 24"  fill="none"  stroke="#FFC107"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
-            <p>San Francisco Gotera, Morazán</p>
+            <p>San Francisco Gotera, Morazán.</p>
             <a class="btn" href="#">Contactar</a>
         </div><!-- .hero-content -->
     </section>
@@ -58,37 +58,41 @@
                 <p>Maecenas vitae dignissim ante. Donec vehicula semper arcu ac eleifend. Class aptent taciti sociosqu ad litora torquent.</p>
             </section>   
         </div><!-- .services -->     
+    
+        <section>
+            <h2>Contacto</h2>
+            <form class="form">
+                <fieldset>
+                    <legend>Contáctame llenando todos los campos</legend>
+                    <div class="fields-container">
+                        <div class="field">
+                            <label for="name">Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu nombre..." id="name">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu teléfono..." id="phone">
+                        </div>
+                        <div class="field">
+                            <label for="email">Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu correo..." id="email">
+                        </div>
+                        <div class="field">
+                            <label for="msg">Mensaje</label>
+                            <textarea class="input-text" id="msg"></textarea>
+                        </div>
+                    </div><!-- .fields-container -->
+                    <div class="flex align-right">
+                        <input class="btn w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
-    <section>
-        <h2>Contacto</h2>
-        <form>
-            <fieldset>
-                <legend>Contáctame llenando todos los campos</legend>
-
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" placeholder="Tu nombre..." id="name">
-                </div>
-                <div>
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" placeholder="Tu teléfono..." id="phone">
-                </div>
-                <div>
-                    <label for="email">Correo</label>
-                    <input type="email" placeholder="Tu correo..." id="email">
-                </div>
-                <div>
-                    <label for="msg">Mensaje</label>
-                    <textarea id="msg"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
-        </form>
-    </section>
-    <footer>
-        <p>Todos los derechos reservados. Ever Vásquez Freelancer</p>
+    <footer class="footer">
+        <hr>
+        <p>Copyright © 2024 - Todos los derechos reservados. Ever Vásquez Freelancer</p>
+        <hr>
     </footer>
 </body>
 </html>         
